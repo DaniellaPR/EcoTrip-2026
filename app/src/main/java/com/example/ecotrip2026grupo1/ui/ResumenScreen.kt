@@ -4,6 +4,7 @@ import androidx.compose.foundation.layout.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.automirrored.filled.ArrowBack
 import androidx.compose.material3.*
+import androidx.compose.material3.HorizontalDivider
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.font.FontWeight
@@ -57,7 +58,7 @@ fun ResumenScreen(
                     color = MaterialTheme.colorScheme.primary
                 )
 
-                Divider(color = MaterialTheme.colorScheme.outlineVariant)
+                HorizontalDivider(color = MaterialTheme.colorScheme.outlineVariant)
 
                 // Uso de plantillas de cadena idiomáticas de Kotlin
                 Text(text = "🌍 Origen: ${datos.origen}", style = MaterialTheme.typography.bodyLarge)

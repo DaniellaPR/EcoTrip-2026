@@ -2,6 +2,8 @@ package com.example.ecotrip2026grupo1.ui
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.text.KeyboardOptions
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.automirrored.filled.ArrowForward
 import androidx.compose.material3.*
 import androidx.compose.runtime.*
 import androidx.compose.ui.Alignment
@@ -60,7 +62,10 @@ fun FormularioScreen(
                     }
                 }
             ) {
-                Text("Ir")
+                Icon(
+                    imageVector = Icons.AutoMirrored.Filled.ArrowForward,
+                    contentDescription = "Ir al resumen"
+                )
             }
         }
     ) { paddingValues ->
