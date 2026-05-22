@@ -22,11 +22,16 @@ data class ResumenRuta(
     val huellaCarbonoKg: Double
 )
 
+// Usamos Enum para el transporte, así garantizamos el Type - Safety en las opciones)
+
+enum class TipoTransporte {
+    TREN, BICICLETA, VEHICULO_ELECTRICO
+}
 /**
  * Data Class pura para el manejo de preferencias globales persistentes en disco.
  */
 data class PreferenciaViaje(
-    val ultimoOrigen: String = "",
-    val ultimoDestino: String = "",
-    val totalViajesCalculados: Int = 0
+    val nombreViajero: String = "",
+    val tipoTransporte: TipoTransporte = TipoTransporte.BICICLETA,
+    val soloBajaHuellaCarbono: Boolean = false
 )
